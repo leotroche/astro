@@ -1,0 +1,13 @@
+# .editorconfig
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf # Prettier
+indent_size = 2 # Prettier
+indent_style = space # Prettier
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
