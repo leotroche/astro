@@ -1,0 +1,14 @@
+# .prettierrc.yaml
+
+plugins:
+  - prettier-plugin-astro
+
+overrides:
+  - files: '*.astro'
+    options:
+      parser: astro
+
+semi: false
+printWidth: 100
+singleQuote: true
+jsxSingleQuote: true
