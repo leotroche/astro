@@ -97,14 +97,16 @@ extends:
   - plugin:astro/recommended
 
 parserOptions:
-  project: tsconfig.json
+  project: ./tsconfig.json
 
 overrides:
   - files: '*.astro'
     parser: astro-eslint-parser
     parserOptions:
+      tsconfigRootDir: .
       parser: '@typescript-eslint/parser'
-      extraFileExtensions: .astro
+      extraFileExtensions:
+        - .astro
 
 rules:
   comma-dangle: off
@@ -123,7 +125,7 @@ rules:
   "extends": ["standard-with-typescript", "plugin:astro/recommended"],
 
   "parserOptions": {
-    "project": "tsconfig.json"
+    "project": "./tsconfig.json"
   },
 
   "overrides": [
@@ -131,8 +133,9 @@ rules:
       "files": "*.astro",
       "parser": "astro-eslint-parser",
       "parserOptions": {
+        "tsconfigRootDir": ".",
         "parser": "@typescript-eslint/parser",
-        "extraFileExtensions": ".astro"
+        "extraFileExtensions": [".astro"]
       }
     }
   ],
