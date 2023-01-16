@@ -51,6 +51,8 @@ singleQuote: true
 jsxSingleQuote: true
 ```
 
+- **_.prettierrc.json_**
+
 ```json
 {
   "plugins": ["prettier-plugin-astro"],
