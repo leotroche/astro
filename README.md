@@ -81,6 +81,8 @@ jsxSingleQuote: true
 pnpm install --save-dev ts-standard eslint-plugin-astro @typescript-eslint/parser
 ```
 
+- **_package.json_**
+
 ```json
 "lint": "eslint --fix . --ext .js,.ts,.astro"
 ```
