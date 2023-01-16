@@ -10,8 +10,9 @@
       "files": "*.astro",
       "parser": "astro-eslint-parser",
       "parserOptions": {
+        "tsconfigRootDir": ".",
         "parser": "@typescript-eslint/parser",
-        "extraFileExtensions": ".astro"
+        "extraFileExtensions": [".astro"]
       }
     }
   ],
